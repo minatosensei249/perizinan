@@ -34,3 +34,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/logout',[SesiController::class,'logout']);
 
 });
+
+use App\Http\Controllers\KelasController;
+
+Route::resource('kelas', KelasController::class);
